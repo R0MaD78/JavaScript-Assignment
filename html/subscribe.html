@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--***
+		Author				Adrian Romeo
+		Date written		09/03/2019
+		Notes				This file is an assignment in adding JavaScript in HTML
+		-->
+		<meta charset="utf-8"/>
+		<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">	<!-- Google font --> 
+		<link rel="stylesheet" type="text/css" href="../css/assignment.css" />
+		<!--<script src="../js/AssignmentPart1.js">
+		</script>-->
+		<title>Subscribe</title>
+	</head>
+	<body>
+		<div class = "limits">	<!-- container -->
+			<header>
+				<h1>Stan Lee</h1>
+			</header>
+			<article>
+			<h3>Subscribe to Marvel Comics</h3>
+				<form name="paymentForm" onsubmit="return validateFieldsets()">												<!-- form start -->
+				<fieldset>   										<!-- first fieldset -->
+					<legend>Customer details</legend>
+					<p>
+						First name <input type="text" id="firstName" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="firstNameError"></span>	<!-- textbox 1-->
+					</p>
+					<p>		
+						Last Name <input type="text" id="lastName" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="lastNameError"></span>	<!-- textbox 2 -->
+					</p>
+					<p>		
+						Email <input type="text" id="email" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="emailError"></span>	<!-- textbox 3 -->
+					</p>
+					<p>		
+						Postcode <input type="text" id="post" size="4" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="postError"></span>	<!-- textbox 4 -->
+					</p>
+				</fieldset>
+				<fieldset>											<!-- second fieldset -->
+					<legend>Payment details</legend>
+					<p>
+					Credit card <select id="card" onfocus="changeBgd(this)" onblur="resetBgd(this)">							<!-- drop down list 1 -->
+						<option selected="selected" >American Express</option>
+						<option>Visa</option>
+						<option>Mastercard</option>
+					</select>
+					</p>
+					<p>		
+						Card number <input type="text" id="cardNumber" size="16" onfocus="changeBgd(this)" onblur="resetBgd(this)"><span id="cardNumberError"></span>	<!-- textbox 5 -->
+					</p>
+					<p>		
+						CVV <input type="text" id="cvv" size="3" onfocus="changeBgd(this)" onblur="resetBgd(this)">
+						<span id="cvvError"></span>	<!-- textbox 6 -->
+					</p>
+					<p>
+					<label>Expiry MM/YY</label>						
+					<select id="month" onfocus="changeBgd(this)" onblur="resetBgd(this)">							<!-- drop down list 2 -->
+						<option selected="selected" value="0">01</option>
+						<option value="1">02</option>
+						<option value="2">03</option>
+						<option value="3">04</option>
+						<option value="4">05</option>
+						<option value="5">06</option>
+						<option value="6">07</option>
+						<option value="7">08</option>
+						<option value="8">09</option>
+						<option value="9">10</option>
+						<option value="10">11</option>
+						<option value="11">12</option>
+					</select><span id="monthError">
+					<select id="year" onfocus="changeBgd(this)" onblur="resetBgd(this)">							<!-- drop down list 3 -->
+						<option selected="selected" value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+						<option value="2023">2023</option>
+						<option value="2024">2024</option>
+						<option value="2025">2025</option>
+						<option value="2026">2026</option>
+						<option value="2027">2027</option>
+						<option value="2028">2028</option>
+						<option value="2029">2029</option>
+						<option value="2030">2030</option>
+					</select><span id="yearError"></span>
+					</p>					
+				</fieldset>	
+<br />
+<br />
+<br /> 
+<button type="submit" value="Submit">Submit</button>					<!-- submit button -->
+<button type="button" onclick="formHelp()">Help</button>
+<br />
+<br />
+<br />										<!-- help button -->
+<button type="button" onclick="validateForm()">Affiliated Websites</button>	<!-- javascript function button -->
+</form>
+<script src="../js/AssignmentPart1.js">									<!-- JavaScript call -->
+</script>
+
+			</article>
+			<footer>
+					<nav> 												<!-- navitation links -->	
+						<a href="../index.html">Home</a>
+						<img src="../images/captainamerica.png" alt="logo"/>
+						<a href="biography.html">Biography</a>
+						<img src="../images/captainamerica.png" alt="logo"/>
+						<a class="active" href="#">Subscribe</a>
+						<!--<img src="../images/captainamerica.png" alt="logo"/>
+						<a href="help.html">Help</a>-->
+					</nav>
+			</footer>
+		</div>
+	</body>
+</html>

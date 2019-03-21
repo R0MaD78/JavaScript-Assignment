@@ -1,0 +1,141 @@
+/* main */
+.limits {
+	width: 80%;
+	max-width: 1260px;
+	min-width: 780px;
+	margin: 0 auto;
+	}
+body{
+	background-image: url(../images/comics.jpg);
+	background-repeat: repeat;
+}
+h1 {
+	font-size: 100px; 
+	color: white;
+	font-family: 'Rammetto One', cursive;
+	margin-right: 20px;
+}
+h3, h4 {
+	color: white;
+	font-family: 'Rammetto One', cursive;
+	font-weight: 200;
+}
+p {
+	color: white;
+}
+p.f_letter:first-letter{
+	color:	#e74c3c;
+	font-family: 'Rammetto One', cursive;
+	font-size: 25px;
+}
+legend {				/*change fieldset title text colour*/
+	color: white;
+}
+form {					/*aligns form centered*/
+	width:50%;
+	height:600px;
+	display:inline-block;
+}
+header{
+	background-image: url(../images/wgp3.jpg);
+	background-position: left top;
+	border-radius: 15px 15px 0 0;
+	width: 100%;
+	height: 200px;
+	font-size: 10px;
+	text-align: right;
+	border-bottom: 1px solid black;
+	}
+article {
+	background: rgba( 0, 0, 0, 0.8 );
+	width: 100%;
+	height: 880px;
+	float: left;
+	font-size: 20px;
+	text-align: center;
+}
+#left_style{
+	border-radius: 20px 0 0 20px;
+}
+#right_style{
+	border-radius: 0 20px 20px 0;
+}
+footer {
+	background-color: #02050c;
+	border-radius: 0 0 15px 15px;
+	width: 100%;
+	height: 100px;
+	float: left;
+	font-size: 30px;
+	text-align: center;
+	border-top: 1px solid black;
+	}
+nav	{
+	float: left;
+	width: 100%;
+	margin-top: 18px;
+	font-family: 'Rammetto One', cursive;
+}
+/* Links */
+a:link, a:visited {
+	color: white; 
+	text-decoration:none;
+}
+a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+a:active {
+	color: pink;
+	text-decoration:none;
+}
+a.active {
+	color:  #27ae60;
+}
+/* Biography */
+ol {
+	width: 200px;
+	background-color: black;
+	display: inline-block;
+	list-style-type: lower-alpha;
+	color:  #58d68d;
+	font-size: 25px;
+	text-align: left;
+}
+/* Cameos */
+table, td {
+	color: white;
+	border: 1px solid white;
+	margin-top: 30px;
+	border-collapse: collapse;
+}
+th{
+	color:white;
+	border: 1px solid white;
+	font-family: 'Rammetto One', cursive;
+}
+tr:nth-child(even) {
+	background-color: #b03a2e;
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Video */
+.pos_layer{
+	font-family: 'Rammetto One', cursive;
+	border: 1px solid white;
+	border-radius: 20px;
+	display:inline-block;
+	padding: 5px;
+	margin-top: 20px;
+	background-color: #3498db;
+}
+.rotate_left{
+	transform: rotate(10deg);
+	padding: 10px;
+}
+.rotate_right{
+	transform: rotate(-10deg);		
+	padding: 10px;
+}
